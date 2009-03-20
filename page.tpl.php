@@ -14,10 +14,10 @@ Description: A two-column, fixed-width and lightweight template ideal for 1024x7
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-<title>Cup of Coffee by Free Css Templates</title>
+<title><?php echo $head_title;?></title>
 <meta name="keywords" content="" />
 <meta name="description" content="" />
-<link href="default.css" rel="stylesheet" type="text/css" />
+<?php echo $styles;?>
 </head>
 <body>
 
@@ -38,40 +38,20 @@ Description: A two-column, fixed-width and lightweight template ideal for 1024x7
 <!-- end header -->
 
 <div id="logo">
-	<h1><a href="#">cup of coffee  </a></h1>
-	<h2> template Design by Free Css Templates</h2>
+	<h1><a href="<?php echo url('<front>');?>"><?php echo $site_name;?></a></h1>
+	<h2><?php echo $site_slogan;?></h2>
 </div>
 
 <!-- start page -->
 <div id="page">
 	<!-- start content -->
 	<div id="content">
-		<div class="post">
-			<h1 class="title">Welcome to our website </h1>
-			<div class="entry">
-				<p>This is Cup of Coffee, is a free template from <a href="http://freecsstemplates.org/">Free CSS Templates</a> released under a <a href="http://creativecommons.org/licenses/by/2.5/">Creative Commons Attribution 2.5 License</a>. The flower photo is fromt <a href="http://www.pdphoto.org/">PDPhoto.org</a>. You're free to use this template for both commercial or personal use. I only ask that you link back to <a href="http://freecsstemplates.org/">my site</a> in some way. Enjoy :)</p>
-				<p>Vestibulum blandit augue at mi. Praesent fermentum lectus eget diam. Nam cursus, orci sit amet porttitor iaculis, ipsum massa aliquet nulla, non elementum mi elit a mauris. In hac habitasse platea. Vestibulum blandit augue at mi. Praesent fermentum lectus eget diam. Nam cursus, orci sit amet porttitor iaculis, ipsum massa aliquet nulla, non elementum mi elit a mauris. In hac habitasse platea.</p>
-				</div>
-			<div class="meta">
-				<p class="byline">Posted on July 21, 2007 byFreeCssTemplates</p>
-				<p class="links"><a href="#" class="more">Read full article</a> <b>|</b> <a href="#" class="comments">Comments (32)</a></p>
-			</div>
-		</div>
-		<div class="post">
-			<h2 class="title">Lorem Ipsum Dolor Volutpat</h2>
-			<div class="entry">
-				<p>Curabitur tellus. Phasellus tellus turpis, iaculis in, faucibus lobortis, posuere in, lorem. Donec a ante. Donec neque purus, adipiscing id, eleifend a, cursus vel, odio. Vivamus varius justo sit amet leo. Morbi sed libero. Vestibulum blandit augue at mi. Praesent fermentum lectus eget diam. Nam cursus, orci sit amet porttitor iaculis, ipsum massa aliquet nulla, non elementum mi elit a mauris. In hac habitasse platea.</p>
-				<p>Vestibulum blandit augue at mi. Praesent fermentum lectus eget diam. Nam cursus, orci sit amet porttitor iaculis, ipsum massa aliquet nulla, non elementum mi elit a mauris. In hac habitasse platea.</p>
-			</div>
-			<div class="meta">
-				<p class="byline">Posted on July 18, 2007 byFreeCssTemplates</p>
-				<p class="links"><a href="#" class="more">Read full article</a> <b>|</b> <a href="#" class="comments">Comments (32)</a></p>
-			</div>
-		</div>
+    <?php echo $content;?>		
 	</div>
 	<!-- end content -->
 	<!-- start sidebar -->
 	<div id="sidebar">
+        <?php echo $sidebar_left;?>
 		<ul>
 			<li id="search">
 				<h2>Search</h2>
