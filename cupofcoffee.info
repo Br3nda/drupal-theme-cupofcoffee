@@ -4,4 +4,4 @@ version = VERSION
 core = 6.x
 engine = phptemplate
 stylesheets[all][] = default.css
-
+regions[sidebar_left] = Left sidebar
