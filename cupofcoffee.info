@@ -4,4 +4,10 @@ version = VERSION
 core = 6.x
 engine = phptemplate
 stylesheets[all][] = default.css
-regions[sidebar_left] = Left sidebar
+regions[header]   = Header
+regions[content]  = Content
+regions[left]     = Upper Sidebar
+regions[right]    = Lower Sidebar
+regions[bottom]   = Bottom Block Bar
+regions[footer]   = Footer
+
