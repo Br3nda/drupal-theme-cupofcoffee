@@ -46,12 +46,18 @@ Description: A two-column, fixed-width and lightweight template ideal for 1024x7
 <div id="page">
 	<!-- start content -->
 	<div id="content">
-    <?php echo $content;?>		
+    <?php echo $messages;?>
+    <?php echo $babs;?>
+    <?php echo $content;?>
+    
 	</div>
 	<!-- end content -->
 	<!-- start sidebar -->
 	<div id="sidebar">
-        <?php echo $sidebar_left;?>
+        <ul>
+        <?php echo $left;?>
+        </ul>
+        <?php /*
 		<ul>
 			<li id="search">
 				<h2>Search</h2>
@@ -86,7 +92,7 @@ Description: A two-column, fixed-width and lightweight template ideal for 1024x7
 					<li><a href="#">Velit semper nisi molestie</a></li>
 				</ul>
 			</li>
-		</ul>
+		</ul>*/?>
 	</div>
 	<!-- end sidebar -->
 	<div style="clear: both;">&nbsp;</div>
