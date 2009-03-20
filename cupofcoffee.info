@@ -1,0 +1,7 @@
+name = Cup Of Coffee 
+description = Simple & Elegant Dark 2 Column Theme.
+version = VERSION
+core = 6.x
+engine = phptemplate
+stylesheets[all][] = default.css
+
