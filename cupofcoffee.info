@@ -6,8 +6,8 @@ engine = phptemplate
 stylesheets[all][] = default.css
 regions[header]   = Header
 regions[content]  = Content
-regions[left]     = Upper Sidebar
-regions[right]    = Lower Sidebar
+regions[left]     = Left Sidebar
+regions[right]    = Right Sidebar
 regions[bottom]   = Bottom Block Bar
 regions[footer]   = Footer
 
